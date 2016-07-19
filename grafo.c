@@ -259,6 +259,9 @@ int GIpegaGrau(Grafo grafo, int vertice){
         if ((grafo->aresta[i].x==vertice)||(grafo->aresta[i].y==vertice)){
             grau++;
         }
+	    if ((grafo->aresta[i].x==vertice)&&(grafo->aresta[i].y==vertice)){
+            grau++;
+        }
     }
     return grau;
 }
